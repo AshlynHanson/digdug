@@ -1,3 +1,4 @@
+//creates a Rock object in a location on the grid
 
 public class Rock {
 	private Location loc;
