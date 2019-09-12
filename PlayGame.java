@@ -2,6 +2,7 @@
 import java.util.Scanner;
 /**
  *	Executes the DigDug game
+ *
  */
 public class PlayGame {
 	
