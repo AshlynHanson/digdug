@@ -1,5 +1,8 @@
 import java.util.Random;
 
+/**
+* This class creates a Dig Dug object  that has some location and moves in some direction in the grid
+*/
 public class DigDug {
 	
 	private Location loc;
@@ -20,6 +23,9 @@ public class DigDug {
 		return "D";
 	}
 	
+	/*
+	* checks if the location of the DigDug object is equal to the location being checked
+	*/
 	public boolean isLocated(Location loc) {
 		if (this.loc.getRow() == loc.getRow() && this.loc.getCol() == loc.getCol()) {
 			return true;
