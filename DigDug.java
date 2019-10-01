@@ -24,7 +24,9 @@ public class DigDug {
 	}
 	
 	/*
-	* checks if the location of the DigDug object is equal to the location being checked
+	Checks if the location of the DigDug object is equal to the location being checked
+	@param loc the location that is being checked
+	@return boolean whether the DigDug's location is equal to the current loc
 	*/
 	public boolean isLocated(Location loc) {
 		if (this.loc.getRow() == loc.getRow() && this.loc.getCol() == loc.getCol()) {
@@ -34,6 +36,11 @@ public class DigDug {
 		}
 	}
 	
+	/**
+	Moves the DigDug's Location by calling the move(int,int) method in the Location class
+	@param dr - int for row
+	@param dc - int for column
+	*/
 	public void move(int dr, int dc) {
 		this.loc.move(dr, dc);
 		if (dc == 1) {
